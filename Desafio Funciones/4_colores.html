@@ -1,0 +1,66 @@
+<!-- Construye una página web 4_colores.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./assets/js/css/style.css"> -->
+</head>
+<body>
+
+    <!-- Crea 4 divs que tengan alto y ancho de 200px y de colores azul, rojo, verde y
+amarillo (insertar estilos con atributo style). Cada uno de los divs debe tener
+un identificador único -->
+
+<div 
+    id="azul"
+    style="background-color: blue; width: 200px; height: 200px"
+    ></div>
+
+    <div 
+    id="rojo"
+    style="background-color: red; width: 200px; height: 200px"
+    ></div>
+
+    <div 
+    id="verde"
+    style="background-color: green; width: 200px; height: 200px"
+    ></div>
+
+    <div 
+    id="amarillo"
+    style="background-color: yellow; width: 200px; height: 200px"
+    ></div>
+
+    <!-- Dentro del script agrega el evento para que al hacerle click a uno de los divs,
+    este cambie de color al color negro. Utiliza addEventListener  -->
+
+    <script>
+
+let id = document.querySelectorAll("[id]").forEach(item => {
+ item.addEventListener('click', event => {
+item.style.backgroundColor = "black"
+})
+})
+
+    </script>
+    <script src="./script4.js"> </script>
+</div>
+
+
+
+<div id="key"
+style="background-color: white; width: 200px; height: 200px; border: 2px solid black;"
+></div>
+
+
+<div id="nuevo"
+style="background-color: white; width: 200px; height: 200px; border: 2px solid gray;"
+></div>
+
+
+</body>
+</html>
